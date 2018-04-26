@@ -22,9 +22,11 @@ class School
   end
 
   def sort
+    temp= {}
    @roster.each do |k,v|
-      puts v
+      temp[k] = v.sort
     end
+    temp
 
   end
 
